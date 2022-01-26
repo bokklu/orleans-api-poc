@@ -30,8 +30,6 @@ namespace Orleans.Api.Infra.Controllers
                 if (!validationResult.IsValid)
                     return BadRequest(validationResult.Errors);
 
-                throw new Exception();
-
                 await _playerService.CreatePlayerAsync(player.ToDomain());
 
                 return NoContent();

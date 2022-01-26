@@ -1,0 +1,12 @@
+version: "3.9"
+
+services:
+
+  orleans-api:
+    container_name: orleans-api
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    ports:
+      - "5000:80"
+    restart: unless-stopped
