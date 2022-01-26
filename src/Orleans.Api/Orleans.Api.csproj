@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Orleans.Server" Version="3.6.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Orleans.Api.Application\Orleans.Api.Application.csproj" />
+    <ProjectReference Include="..\Orleans.Api.Grains\Orleans.Api.Grains.csproj" />
+    <ProjectReference Include="..\Orleans.Api.Infra.Controllers\Orleans.Api.Infra.Controllers.csproj" />
+  </ItemGroup>
+
+</Project>
