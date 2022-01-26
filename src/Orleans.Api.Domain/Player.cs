@@ -22,12 +22,14 @@
 
         public void LevelUp()
         {
-            ++Level;
+            if (Level != PlayerLevel.Master)
+                ++Level;
         }
 
         public void LevelDown()
         {
-            --Level;
+            if (Level != PlayerLevel.Beginner)
+                --Level;
         }
 
         #endregion
